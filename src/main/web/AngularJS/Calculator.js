@@ -20,7 +20,16 @@
 
 
         $scope.NGC_btIgual = function(visor) {
-            $scope.NGM_tbVisor = visor.toString() + "11111";
+            var req = {
+                method: 'POST',
+                url: 'http://localhost:8080/calculator/Do',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: { 'visor': "teste" }
+            }
+            $http(req).success(function(response) { $scope.NGM_tbVisor = "teste"; });
+
         };
 
 
