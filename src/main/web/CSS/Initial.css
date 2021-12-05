@@ -1,0 +1,17 @@
+.Application {
+    position: fixed;
+    height: 101%;
+    width: 101%;
+    left: -1%;
+    top: -1%;
+    background-image: linear-gradient(to right, #a9eaffd2, #cef3ffd2, #eefbffd2, #eefbffd2, #cef3ffd2, #a9eaffd2);
+}
+
+.Initial {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.432), rgba(255, 255, 255, 0.096), rgba(255, 255, 255, 0.096), rgba(255, 255, 255, 0.432));
+}

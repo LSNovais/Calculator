@@ -1,0 +1,314 @@
+.Calculator {
+    position: relative;
+    height: 70%;
+    width: 80%;
+    left: 10%;
+    top: 20%;
+    background-color: rgba(223, 223, 223, 0.137);
+    border-style: solid;
+    border-color: rgb(175, 175, 175);
+    border-top-left-radius: 3pc;
+    border-top-right-radius: 3pc;
+    border-bottom-left-radius: 3pc;
+    border-bottom-right-radius: 3pc;
+}
+
+.tbVisor {
+    position: relative;
+    height: 15%;
+    width: 70%;
+    top: 7%;
+    left: 15%;
+    border-color: transparent;
+    border-top-left-radius: 1pc;
+    border-top-right-radius: 1pc;
+    border-bottom-left-radius: 1pc;
+    border-bottom-right-radius: 1pc;
+}
+
+.btSete {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: 15%;
+    left: 10%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btOito {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: 3%;
+    left: 20%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btNove {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -9%;
+    left: 30%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btQuatro {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -5%;
+    left: 10%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btCinco {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -17%;
+    left: 20%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btSeis {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -29%;
+    left: 30%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btUm {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -24%;
+    left: 10%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btDois {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -36%;
+    left: 20%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btTres {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -48%;
+    left: 30%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btZero {
+    position: relative;
+    height: 12%;
+    width: 28%;
+    top: -43%;
+    left: 10%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btMenos {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -105%;
+    left: 40%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btMais {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -101%;
+    left: 40%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btVezes {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -96%;
+    left: 40%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btDivisao {
+    position: relative;
+    height: 12%;
+    width: 8%;
+    top: -91%;
+    left: 40%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.divDivisaoBts {
+    position: relative;
+    height: 60%;
+    width: 0.3%;
+    top: -152%;
+    left: 52%;
+    background-color: black;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+}
+
+.btIgual {
+    position: relative;
+    height: 12%;
+    width: 16%;
+    top: -213%;
+    left: 56%;
+    background-color: green;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.btLimpar {
+    position: relative;
+    height: 12%;
+    width: 16%;
+    top: -225%;
+    left: 75%;
+    background-color: red;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.taHist {
+    position: relative;
+    height: 42%;
+    width: 37%;
+    top: -220%;
+    left: 55%;
+    background-color: white;
+    border-top-left-radius: 0.5pc;
+    border-top-right-radius: 0.5pc;
+    border-bottom-left-radius: 0.5pc;
+    border-bottom-right-radius: 0.5pc;
+    text-align: center;
+    font-size: 150%;
+    cursor: pointer;
+}

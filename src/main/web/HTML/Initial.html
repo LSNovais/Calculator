@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/Initial.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/Calculator.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>
+        Calculator
+    </title>
+
+    <script>
+        var app = angular.module('Calculator', []);
+        app.controller('divCtrlInitial', function($scope, $http) {
+
+            $scope.NGM_tbVisor = 0;
+
+            $scope.NGC_bt = function(val) {
+                if ($scope.NGM_tbVisor == 0) {
+                    $scope.NGM_tbVisor = val;
+                } else {
+                    $scope.NGM_tbVisor = $scope.NGM_tbVisor + val.toString();
+                }
+            };
+
+            $scope.NGC_btLimpar = function(val) {
+                $scope.NGM_tbVisor = 0;
+            };
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="Application" id="Application" ng-app="Calculator" ng-controller="divCtrlInitial">
+        <div class="Initial" id="Initial">
+            <div class="Calculator" id="Calculator">
+                <input type="text" class="tbVisor" id="tbVisor" ng-model="NGM_tbVisor" readonly>
+                <div class="btSete" id="btSete" ng-model="NGM_btSete" ng-click="NGC_bt(7)">7</div>
+                <div class="btOito" id="btOito" ng-model="NGM_btOito" ng-click="NGC_bt(8)">8</div>
+                <div class="btNove" id="btNove" ng-model="NGM_btNove" ng-click="NGC_bt(9)">9</div>
+                <div class="btQuatro" id="btQuatro" ng-model="NGM_btQuatro" ng-click="NGC_bt(4)">4</div>
+                <div class="btCinco" id="btCinco" ng-model="NGM_btCinco" ng-click="NGC_bt(5)">5</div>
+                <div class="btSeis" id="btSeis" ng-model="NGM_btSeis" ng-click="NGC_bt(6)">6</div>
+                <div class="btUm" id="btUm" ng-model="NGM_btUm" ng-click="NGC_bt(1)">1</div>
+                <div class="btDois" id="btDois" ng-model="NGM_btDois" ng-click="NGC_bt(2)">2</div>
+                <div class="btTres" id="btTres" ng-model="NGM_btTres" ng-click="NGC_bt(3)">3</div>
+                <div class="btZero" id="btZero" ng-model="NGM_btZero" ng-click="NGC_bt(0)">0</div>
+                <div class="btMenos" id="btMenos" ng-model="NGM_btMenos" ng-click="NGC_bt('-')">-</div>
+                <div class="btMais" id="btMais" ng-model="NGM_btMais" ng-click="NGC_bt('+')">+</div>
+                <div class="btVezes" id="btVezes" ng-model="NGM_btVezes" ng-click="NGC_bt('x')">x</div>
+                <div class="btDivisao" id="btDivisao" ng-model="NGM_btDivisao" ng-click="NGC_bt('/')">/</div>
+                <div class="divDivisaoBts" id="divDivisaoBts" ng-model="NGM_divDivisaoBts"></div>
+                <div class="btIgual" id="btIgual" ng-model="NGM_btIgual" ng-click="NGC_btIgual()">=</div>
+                <div class="btLimpar" id="btLimpar" ng-model="NGM_btLimpar" ng-click="NGC_btLimpar()">Limpar</div>
+                <textarea class="taHist" id="taHist" ng-model="NGM_taHist" readonly></textarea>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
