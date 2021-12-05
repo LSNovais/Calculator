@@ -4,37 +4,19 @@
 <head>
     <link rel="stylesheet" href="../CSS/Initial.css" type="text/css">
     <link rel="stylesheet" href="../CSS/Calculator.css" type="text/css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="../AngularJS/Calculator.js"></script>
+
+
 
     <title>
         Calculator
     </title>
 
-    <script>
-        var app = angular.module('Calculator', []);
-        app.controller('divCtrlInitial', function($scope, $http) {
-
-            $scope.NGM_tbVisor = 0;
-
-            $scope.NGC_bt = function(val) {
-                if ($scope.NGM_tbVisor == 0) {
-                    $scope.NGM_tbVisor = val;
-                } else {
-                    $scope.NGM_tbVisor = $scope.NGM_tbVisor + val.toString();
-                }
-            };
-
-            $scope.NGC_btLimpar = function(val) {
-                $scope.NGM_tbVisor = 0;
-            };
-
-        });
-    </script>
-
 </head>
 
 <body>
+
     <div class="Application" id="Application" ng-app="Calculator" ng-controller="divCtrlInitial">
         <div class="Initial" id="Initial">
             <div class="Calculator" id="Calculator">
@@ -54,7 +36,7 @@
                 <div class="btVezes" id="btVezes" ng-model="NGM_btVezes" ng-click="NGC_bt('x')">x</div>
                 <div class="btDivisao" id="btDivisao" ng-model="NGM_btDivisao" ng-click="NGC_bt('/')">/</div>
                 <div class="divDivisaoBts" id="divDivisaoBts" ng-model="NGM_divDivisaoBts"></div>
-                <div class="btIgual" id="btIgual" ng-model="NGM_btIgual" ng-click="NGC_btIgual()">=</div>
+                <div class="btIgual" id="btIgual" ng-model="NGM_btIgual" ng-click="NGC_btIgual(NGM_tbVisor)">=</div>
                 <div class="btLimpar" id="btLimpar" ng-model="NGM_btLimpar" ng-click="NGC_btLimpar()">Limpar</div>
                 <textarea class="taHist" id="taHist" ng-model="NGM_taHist" readonly></textarea>
 
