@@ -1,0 +1,12 @@
+@host = http://localhost:8080/CalculatorApplication/Do
+
+
+###
+
+
+POST {{host}}
+Content-Type: application/json
+
+{
+    "visor": "teste"
+}
